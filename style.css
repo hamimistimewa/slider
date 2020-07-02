@@ -1,0 +1,177 @@
+* {
+   margin:0;
+}
+
+
+.quote {
+   font-family: 'Roboto', sans-serif;
+   border-bottom: 5px solid #868686;
+   width: 120px;
+   margin: 0 auto;
+   margin-top: 10px;
+}
+
+.blockquote_wrapping{
+   margin-top: 50px;
+   margin-bottom: 80px;
+   padding: 20px;
+}
+
+.row1 {
+   display: flex;
+   width: 60%;
+   margin: 0 auto;
+}
+
+blockquote {
+   padding: 25px;
+   background-color: rgb(247, 249, 253);
+   border: 1px solid #868686;
+   color: rgb(79, 182, 132);
+   width: 60%;
+   margin: 0 auto;
+   margin-bottom: 20px;
+   box-shadow: 0px 0px 10px rgb(219, 245, 233);
+   flex: auto;
+   margin: 20px 20px;
+}
+
+.row2 {
+   display: flex;
+   width: 60%;
+   margin: 0 auto;
+}
+
+.row3 {
+   display: flex;
+   width: 35%;
+   margin: 0 auto;
+}
+
+
+.blockquote_border {
+   border-left-width: 10px;
+   border-radius: 5px;
+}
+
+.blockquote_text {
+   font-family: 'Gelasio', serif;
+   font-style: italic;
+   font-size: 22px;
+   margin-bottom: 15px;
+}
+.blockquote_quoted::before {
+   content: "\201c";
+   text-align: left;
+   font-size: 100px;
+   font-weight: bold;
+   /*color: #ABF1D0;*/
+   color: #868686;
+   display: block;
+   margin-bottom: -40px;
+}
+
+.blockquote_text span {
+   font-family: 'Gelasio', serif;
+   font-weight: bold;
+}
+
+.blockquote_credit {
+   font-weight: bold;
+   font-style: normal;
+   text-align: right;
+   font-size: 22px;
+}
+.blockquote_credit::before {
+   content: "\2013\0020";
+}
+
+img {
+   width: 170px;
+   margin: 0 auto;
+   margin-bottom: -15px;
+   margin-top: -60px;
+
+ }
+
+footer p {
+   color: #fafafa;
+   font-size: 12px;
+   margin: 0 auto;
+   font-size: 15px;
+   padding-bottom: 20px;
+}
+
+footer {
+   background-color: #868686;
+   font-family: 'Gelasio', serif;
+   text-align: center;
+   overflow-x: hidden;
+   margin: 0 auto;
+   width: 100%;
+}
+
+@media (max-width: 1000px) {
+   footer {
+      background-color: #868686;
+      font-family: 'Gelasio', serif;
+      overflow-x: hidden;
+      width: 100%;
+   }
+
+   img {
+      width: 150px;
+      margin: 0 auto;
+      margin-bottom: -15px;
+      margin-top: -60px;
+
+    }
+
+   footer p {
+      color: #fafafa;
+
+      margin: 0 auto;
+      font-size: 14px;
+      padding-bottom: 20px;
+   }
+
+   blockquote {
+      padding: 25px;
+      background-color: rgb(247, 249, 253);
+      border: 1px solid #ABF1D0;
+      color: rgb(79, 182, 132);
+      width: 85%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      box-shadow: 0px 0px 10px 2px rgb(236, 236, 236);
+      box-sizing: border-box;
+   }
+
+   .blockquote_text {
+      font-family: 'Gelasio', serif;
+      font-style: italic;
+      font-size: 14px;
+      margin-bottom: 15px;
+   }
+
+   .blockquote_credit {
+      font-weight: bold;
+      font-style: normal;
+      text-align: right;
+      font-size: 14px;
+   }
+
+   .row1 {
+      flex-direction: column;
+
+   }
+   .row2 {
+      flex-direction: column;
+
+   }
+   .row3 {
+      flex-direction: column;
+      width: 100%;
+   }
+
+}
